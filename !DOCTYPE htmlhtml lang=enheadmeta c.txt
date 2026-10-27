@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="/assets/dragon-hero-M3yJ1dID.jpg"/><link rel="stylesheet" href="/assets/styles-XkjeoQ7M.css" data-precedence="default"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&amp;family=Barlow:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" data-precedence="default"/><title>Dragon Throne — AI Trading Signal Bot</title><meta name="author" content="Dragon Throne"/><meta name="description" content="Dragon Throne AI: live multi-timeframe trading signals across every major platform and forex pair, forged in a dark medieval war room."/><meta property="og:title" content="Dragon Throne — AI Trading Signal Bot"/><meta property="og:description" content="Live AI trading signals for all platforms and forex pairs, in a cinematic dragon-forged terminal."/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><link rel="modulepreload" href="/assets/index-Bamp5x-D.js"/><link rel="modulepreload" href="/assets/routes-DHcRvfjO.js"/><link rel="modulepreload" href="/assets/sfx-B9jgf8yo.js"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+<style>
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+		transition: opacity var(--badge-transition-duration) var(--badge-transition-easing);
+	}
+
+	#lovable-badge.closing {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: baseline;
+		gap: var(--badge-gap);
+		box-sizing: border-box;
+		padding: 4px var(--badge-padding) 0;
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	/* The wordmark baseline sits at y=12 of the 16px logo; an empty 12px box
+	   makes that the flex baseline so the text aligns to it on any system font. */
+	#lovable-badge-logo {
+		position: relative;
+		display: block;
+		width: 52px;
+		height: 12px;
+	}
+
+	#lovable-badge-logo svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge,
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.b21a279f52bb8621.js" data-artifact-kind="dwl_content_hash" data-artifact-id="ed498472143e582fe8c0921e4f504f25f55cf60671634b1d69ec00eb9c636bf0" data-commit-sha="06b9106705a6ba7e3342889a92262ee40dcf6047" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF82MDh6NzZibWNmOWYxcjI3NTkxOHJnYTJtNyIsImFydGlmYWN0X2tpbmQiOiJkd2xfY29udGVudF9oYXNoIiwiYXJ0aWZhY3RfaWQiOiJlZDQ5ODQ3MjE0M2U1ODJmZThjMDkyMWU0ZjUwNGYyNWY1NWNmNjA2NzE2MzRiMWQ2OWVjMDBlYjljNjM2YmYwIiwiY29tbWl0X3NoYSI6IjA2YjkxMDY3MDVhNmJhN2UzMzQyODg5YTkyMjYyZWU0MGRjZjYwNDciLCJleHAiOjE3OTU3MzQ3NjN9.WUlRJM9xuWKsvoPgCm5s1Rg3lOJw0_zT4u3U6prHQzw"></script><meta name="twitter:title" content="Dragon Throne — AI Trading Signal Bot"><meta name="twitter:description" content="Live AI trading signals for all platforms and forex pairs, in a cinematic dragon-forged terminal."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5df107aa3fa1f2c9b125ca838499415e/id-preview-06b91067--b0b59350-f85a-4ca4-8b9d-ece18fa37836.lovable.app-1788695002976.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5df107aa3fa1f2c9b125ca838499415e/id-preview-06b91067--b0b59350-f85a-4ca4-8b9d-ece18fa37836.lovable.app-1788695002976.png"></head><body><!--$--><main class="relative min-h-screen overflow-hidden pb-16 "><div aria-hidden="true" class="pointer-events-none absolute inset-0 overflow-hidden opacity-50"><span class="absolute bottom-0 rounded-full bg-ember" style="left:0%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 0s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:37%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 0.9s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:74%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 1.8s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:11%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 2.7s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:48%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 3.6s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:85%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 4.5s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:22%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 5.4s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:59%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 6.3s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:96%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 7.2s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:33%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 8.1s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:70%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 9s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:7%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 9.9s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:44%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 10.8s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:81%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 0s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:18%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 0.9s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:55%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 1.8s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:92%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 2.7s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:29%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 3.6s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:66%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 4.5s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:3%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 5.4s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:40%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 6.3s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:77%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 7.2s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:14%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 8.1s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:51%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 9s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:88%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 9.9s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:25%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 10.8s infinite;--drift:-44px"></span></div><header class="relative"><div class="relative isolate w-full overflow-hidden"><div class="relative mx-auto w-full max-w-3xl" style="aspect-ratio:4 / 3"><div class="absolute inset-0 animate-breathe"><div class="absolute inset-0 animate-wing will-change-transform"><img src="/assets/dragon-hero-M3yJ1dID.jpg" alt="Animated black dragon guarding the Dragon Throne trading bot" width="1024" height="768" class="h-full w-full object-cover" style="mask-image:radial-gradient(ellipse at 50% 45%, black 45%, transparent 78%);-webkit-mask-image:radial-gradient(ellipse at 50% 45%, black 45%, transparent 78%)"/></div></div><span aria-hidden="true" class="animate-eye absolute rounded-full bg-ember" style="left:22.4%;top:39.4%;width:14px;height:9px"></span><span aria-hidden="true" class="animate-eye absolute rounded-full bg-ember" style="left:35.4%;top:38.8%;width:15px;height:9px;animation-delay:0.4s"></span><div aria-hidden="true" class="animate-smoke absolute inset-x-0 bottom-0 h-2/3" style="background:radial-gradient(ellipse at 30% 90%, oklch(0.6 0.01 285 / 0.22), transparent 60%), radial-gradient(ellipse at 72% 80%, oklch(0.55 0.01 285 / 0.18), transparent 62%)"></div><div aria-hidden="true" class="pointer-events-none absolute inset-0 overflow-hidden "><span class="absolute bottom-0 rounded-full bg-ember" style="left:0%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 0s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:37%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 0.9s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:74%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 1.8s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:11%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 2.7s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:48%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 3.6s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:85%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 4.5s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:22%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 5.4s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:59%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 6.3s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:96%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 7.2s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:33%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 8.1s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:70%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 9s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:7%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 9.9s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:44%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 10.8s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:81%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 0s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:18%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 0.9s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:55%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 1.8s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:92%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 2.7s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:29%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 3.6s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:66%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 4.5s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:3%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 5.4s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:40%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 6.3s infinite;--drift:-44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:77%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 7.2s infinite;--drift:-22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:14%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 8.1s infinite;--drift:0px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:51%;width:3px;height:3px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 13s linear 9s infinite;--drift:22px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:88%;width:1px;height:1px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 7s linear 9.9s infinite;--drift:44px"></span><span class="absolute bottom-0 rounded-full bg-ember" style="left:25%;width:2px;height:2px;box-shadow:0 0 8px 2px oklch(0.7 0.19 45 / 0.7);animation:ember-rise 10s linear 10.8s infinite;--drift:-44px"></span></div><div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-1/3" style="background:linear-gradient(to top, var(--background), transparent)"></div></div></div><div class="-mt-14 text-center"><h1 class="font-display text-steel text-4xl font-black tracking-[0.16em] sm:text-6xl">DRAGON THRONE</h1><div class="hairline-gold mx-auto mt-4 h-px w-72"></div><p class="mt-4 inline-block rounded-full border border-gold/25 bg-card/70 px-4 py-1.5 text-xs tracking-[0.2em] text-muted-foreground backdrop-blur-md">LIVE AI SIGNALS • ALL PLATFORMS • ALL FOREX PAIRS</p><p class="font-display mt-3 text-xs tracking-[0.2em] text-gold/70">The Throne answers only to its keeper.</p></div></header><div class="relative mx-auto mt-10 grid w-full max-w-5xl gap-6 px-4 lg:grid-cols-[1fr_1.15fr]"><section class="panel-royal space-y-5 p-6"><h2 class="font-display text-sm tracking-[0.28em] text-gold">WAR TABLE</h2><label class="block"><span class="font-display flex items-center gap-2 text-xs tracking-[0.22em] text-steel"><span aria-hidden="true">🏰</span>TRADING PLATFORM</span><select class="mt-2 w-full appearance-none rounded-md border border-border bg-input/60 px-4 py-3 text-sm text-foreground outline-none transition-colors duration-300 focus:border-gold/60"><option value="Quotex" class="bg-card" selected="">Quotex</option><option value="Pocket Option" class="bg-card">Pocket Option</option><option value="IQ Option" class="bg-card">IQ Option</option><option value="Binomo" class="bg-card">Binomo</option><option value="Olymp Trade" class="bg-card">Olymp Trade</option><option value="Expert Option" class="bg-card">Expert Option</option><option value="Deriv" class="bg-card">Deriv</option><option value="Binolla" class="bg-card">Binolla</option><option value="Bullex" class="bg-card">Bullex</option><option value="Tradowix" class="bg-card">Tradowix</option><option value="Exnova" class="bg-card">Exnova</option><option value="MetaTrader 4" class="bg-card">MetaTrader 4</option><option value="MetaTrader 5" class="bg-card">MetaTrader 5</option><option value="TradingView" class="bg-card">TradingView</option><option value="Binance" class="bg-card">Binance</option><option value="Bybit" class="bg-card">Bybit</option><option value="OANDA" class="bg-card">OANDA</option><option value="XM" class="bg-card">XM</option><option value="Exness" class="bg-card">Exness</option><option value="IC Markets" class="bg-card">IC Markets</option></select></label><label class="block"><span class="font-display flex items-center gap-2 text-xs tracking-[0.22em] text-steel"><span aria-hidden="true">🐲</span>MARKET PAIR</span><select class="mt-2 w-full appearance-none rounded-md border border-border bg-input/60 px-4 py-3 text-sm text-foreground outline-none transition-colors duration-300 focus:border-gold/60"><optgroup label="OTC Pairs" class="bg-card"><option value="OTC/EURUSD" class="bg-card" selected="">OTC/EURUSD</option><option value="OTC/GBPUSD" class="bg-card">OTC/GBPUSD</option><option value="OTC/USDJPY" class="bg-card">OTC/USDJPY</option><option value="OTC/USDCHF" class="bg-card">OTC/USDCHF</option><option value="OTC/USDCAD" class="bg-card">OTC/USDCAD</option><option value="OTC/AUDUSD" class="bg-card">OTC/AUDUSD</option><option value="OTC/NZDUSD" class="bg-card">OTC/NZDUSD</option><option value="OTC/EURGBP" class="bg-card">OTC/EURGBP</option><option value="OTC/EURJPY" class="bg-card">OTC/EURJPY</option><option value="OTC/EURCHF" class="bg-card">OTC/EURCHF</option><option value="OTC/EURAUD" class="bg-card">OTC/EURAUD</option><option value="OTC/EURCAD" class="bg-card">OTC/EURCAD</option><option value="OTC/EURNZD" class="bg-card">OTC/EURNZD</option><option value="OTC/GBPJPY" class="bg-card">OTC/GBPJPY</option><option value="OTC/GBPCHF" class="bg-card">OTC/GBPCHF</option><option value="OTC/GBPAUD" class="bg-card">OTC/GBPAUD</option><option value="OTC/GBPCAD" class="bg-card">OTC/GBPCAD</option><option value="OTC/GBPNZD" class="bg-card">OTC/GBPNZD</option><option value="OTC/AUDJPY" class="bg-card">OTC/AUDJPY</option><option value="OTC/AUDCHF" class="bg-card">OTC/AUDCHF</option><option value="OTC/AUDCAD" class="bg-card">OTC/AUDCAD</option><option value="OTC/AUDNZD" class="bg-card">OTC/AUDNZD</option><option value="OTC/NZDJPY" class="bg-card">OTC/NZDJPY</option><option value="OTC/NZDCHF" class="bg-card">OTC/NZDCHF</option><option value="OTC/NZDCAD" class="bg-card">OTC/NZDCAD</option><option value="OTC/CADJPY" class="bg-card">OTC/CADJPY</option><option value="OTC/CADCHF" class="bg-card">OTC/CADCHF</option><option value="OTC/CHFJPY" class="bg-card">OTC/CHFJPY</option><option value="OTC/USDTRY" class="bg-card">OTC/USDTRY</option><option value="OTC/USDZAR" class="bg-card">OTC/USDZAR</option><option value="OTC/USDMXN" class="bg-card">OTC/USDMXN</option><option value="OTC/USDSGD" class="bg-card">OTC/USDSGD</option><option value="OTC/USDINR" class="bg-card">OTC/USDINR</option><option value="OTC/USDPKR" class="bg-card">OTC/USDPKR</option><option value="OTC/USDBDT" class="bg-card">OTC/USDBDT</option><option value="OTC/USDNGN" class="bg-card">OTC/USDNGN</option><option value="OTC/USDEGP" class="bg-card">OTC/USDEGP</option><option value="OTC/USDPHP" class="bg-card">OTC/USDPHP</option></optgroup><optgroup label="Major Forex" class="bg-card"><option value="EUR/USD" class="bg-card">EUR/USD</option><option value="GBP/USD" class="bg-card">GBP/USD</option><option value="USD/JPY" class="bg-card">USD/JPY</option><option value="USD/CHF" class="bg-card">USD/CHF</option><option value="USD/CAD" class="bg-card">USD/CAD</option><option value="AUD/USD" class="bg-card">AUD/USD</option><option value="NZD/USD" class="bg-card">NZD/USD</option></optgroup><optgroup label="Minor / Cross" class="bg-card"><option value="EUR/GBP" class="bg-card">EUR/GBP</option><option value="EUR/JPY" class="bg-card">EUR/JPY</option><option value="EUR/CHF" class="bg-card">EUR/CHF</option><option value="EUR/AUD" class="bg-card">EUR/AUD</option><option value="EUR/CAD" class="bg-card">EUR/CAD</option><option value="EUR/NZD" class="bg-card">EUR/NZD</option><option value="GBP/JPY" class="bg-card">GBP/JPY</option><option value="GBP/CHF" class="bg-card">GBP/CHF</option><option value="GBP/AUD" class="bg-card">GBP/AUD</option><option value="GBP/CAD" class="bg-card">GBP/CAD</option><option value="GBP/NZD" class="bg-card">GBP/NZD</option><option value="AUD/JPY" class="bg-card">AUD/JPY</option><option value="AUD/CHF" class="bg-card">AUD/CHF</option><option value="AUD/CAD" class="bg-card">AUD/CAD</option><option value="AUD/NZD" class="bg-card">AUD/NZD</option><option value="NZD/JPY" class="bg-card">NZD/JPY</option><option value="NZD/CHF" class="bg-card">NZD/CHF</option><option value="NZD/CAD" class="bg-card">NZD/CAD</option><option value="CAD/JPY" class="bg-card">CAD/JPY</option><option value="CAD/CHF" class="bg-card">CAD/CHF</option><option value="CHF/JPY" class="bg-card">CHF/JPY</option></optgroup><optgroup label="Exotic Forex" class="bg-card"><option value="USD/TRY" class="bg-card">USD/TRY</option><option value="USD/ZAR" class="bg-card">USD/ZAR</option><option value="USD/MXN" class="bg-card">USD/MXN</option><option value="USD/SEK" class="bg-card">USD/SEK</option><option value="USD/NOK" class="bg-card">USD/NOK</option><option value="USD/SGD" class="bg-card">USD/SGD</option><option value="USD/HKD" class="bg-card">USD/HKD</option><option value="USD/INR" class="bg-card">USD/INR</option><option value="USD/BRL" class="bg-card">USD/BRL</option><option value="USD/PLN" class="bg-card">USD/PLN</option><option value="USD/THB" class="bg-card">USD/THB</option><option value="USD/PHP" class="bg-card">USD/PHP</option><option value="USD/IDR" class="bg-card">USD/IDR</option><option value="USD/BDT" class="bg-card">USD/BDT</option><option value="USD/PKR" class="bg-card">USD/PKR</option><option value="USD/EGP" class="bg-card">USD/EGP</option><option value="USD/NGN" class="bg-card">USD/NGN</option><option value="USD/ARS" class="bg-card">USD/ARS</option><option value="EUR/TRY" class="bg-card">EUR/TRY</option><option value="EUR/PLN" class="bg-card">EUR/PLN</option><option value="EUR/SEK" class="bg-card">EUR/SEK</option><option value="EUR/NOK" class="bg-card">EUR/NOK</option><option value="EUR/HUF" class="bg-card">EUR/HUF</option></optgroup></select></label><div><span class="font-display text-xs tracking-[0.22em] text-steel">⏳ TIMEFRAME</span><div class="mt-2 flex flex-wrap gap-2"><button class="rounded-md border px-3 py-1.5 font-mono text-xs transition-all duration-300 border-gold/60 bg-secondary text-gold shadow-[var(--shadow-ember)]">M1</button><button class="rounded-md border px-3 py-1.5 font-mono text-xs transition-all duration-300 border-border bg-input/40 text-muted-foreground hover:border-gold/30">M5</button><button class="rounded-md border px-3 py-1.5 font-mono text-xs transition-all duration-300 border-border bg-input/40 text-muted-foreground hover:border-gold/30">M15</button><button class="rounded-md border px-3 py-1.5 font-mono text-xs transition-all duration-300 border-border bg-input/40 text-muted-foreground hover:border-gold/30">M30</button><button class="rounded-md border px-3 py-1.5 font-mono text-xs transition-all duration-300 border-border bg-input/40 text-muted-foreground hover:border-gold/30">H1</button></div></div><button class="font-display animate-sheen w-full rounded-md border border-gold/30 px-4 py-4 text-sm font-bold tracking-[0.24em] text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5 disabled:opacity-70" style="background-image:linear-gradient(100deg, oklch(0.42 0.16 22) 0%, oklch(0.55 0.2 28) 45%, oklch(0.42 0.16 22) 70%)">SUMMON SIGNAL</button><a href="https://t.me/Ahmad_Trader07" target="_blank" rel="noopener noreferrer" aria-label="Join our Telegram channel" class="group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-xl border border-gold/25 bg-card/70 px-5 py-4 backdrop-blur-md transition-all duration-500 hover:-translate-y-0.5 hover:border-gold/50 hover:shadow-[var(--shadow-ember)] "><span aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100" style="background:linear-gradient(100deg, transparent 20%, oklch(0.8 0.02 250 / 0.12) 50%, transparent 80%)"></span><svg viewBox="0 0 240 240" class="h-7 w-7 shrink-0 drop-shadow-[0_2px_6px_oklch(0.6_0.15_240/0.6)]" aria-hidden="true" focusable="false"><defs><linearGradient id="tg-disc" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#37BBFE"></stop><stop offset="100%" stop-color="#007DBB"></stop></linearGradient></defs><circle cx="120" cy="120" r="120" fill="url(#tg-disc)"></circle><path fill="#fff" d="M52 118.5c38-16.6 63.4-27.5 76-32.8 36.2-15.1 43.7-17.7 48.6-17.8 1.1 0 3.5.2 5.1 1.5 1.3 1 1.7 2.5 1.9 3.5.2 1 .4 3.3.2 5.1-2 21.1-10.7 72.3-15.1 96-1.9 10-5.6 13.4-9.1 13.7-7.7.7-13.6-5.1-21.1-10-11.7-7.7-18.3-12.5-29.7-20-13.2-8.7-4.6-13.5 2.9-21.3 2-2 36-33 36.7-35.8.1-.4.2-1.7-.6-2.4-.8-.7-2-.5-2.9-.3-1.2.3-20.9 13.3-59 39-5.6 3.8-10.7 5.7-15.2 5.6-5-.1-14.6-2.8-21.8-5.1-8.8-2.9-15.8-4.4-15.2-9.3.3-2.6 3.8-5.2 10.3-7.6z"></path></svg><span class="font-display text-sm font-bold tracking-[0.22em] text-steel">JOIN TELEGRAM CHANNEL</span></a><div class="flex items-center justify-between rounded-md border border-border bg-input/30 px-4 py-2.5"><span class="font-display text-[11px] tracking-[0.22em] text-muted-foreground">⚙️ DRAGON SOUND</span><button aria-pressed="false" class="rounded-md border px-3 py-1 font-mono text-[11px] tracking-widest transition-colors duration-300 border-border text-muted-foreground hover:text-foreground">MUTED</button></div><button class="w-full rounded-md border border-border px-4 py-2 text-xs tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground">SEAL THE GATE</button></section><section class="space-y-6"><div class="panel-royal p-6"><div class="flex items-center justify-between gap-3"><span class="font-display rounded-md border border-gold/30 bg-secondary px-3 py-1 text-xs tracking-[0.2em] text-gold">M1<!-- --> TIMEFRAME</span><span class="font-mono text-xs text-muted-foreground">OTC/EURUSD<!-- --> | <!-- -->Quotex</span></div><div class="hairline-gold my-4 h-px w-full"></div><div class="flex h-44 w-full items-center justify-center rounded-lg border border-border/60 bg-background/50 font-mono text-xs text-muted-foreground">awaiting market scan…</div><div class="mt-4 space-y-2 rounded-lg border border-border/70 bg-background/60 p-4 font-mono text-[13px] leading-relaxed"><p class="text-muted-foreground">⌛ The dragon sleeps. Summon a signal…</p></div></div><div class="grid gap-4 sm:grid-cols-2"><div class="panel-royal p-5 text-center"><p class="text-xs tracking-[0.22em] text-muted-foreground">NEXT CANDLE CLOSE • <!-- -->M1</p><p class="font-display mt-2 text-4xl font-bold tabular-nums text-gold">00:<!-- -->60</p></div><div class="panel-royal p-5 text-center transition-all duration-500 opacity-60"><p class="text-xs tracking-[0.22em] text-muted-foreground">THRONE VERDICT</p><p class="font-display mt-2 text-4xl font-black text-muted-foreground">—</p></div></div></section></div><footer class="relative mt-14 flex flex-col items-center gap-5 px-4 text-center"><div class="w-full max-w-sm"><a href="https://t.me/Ahmad_Trader07" target="_blank" rel="noopener noreferrer" aria-label="Join our Telegram channel" class="group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-xl border border-gold/25 bg-card/70 px-5 py-4 backdrop-blur-md transition-all duration-500 hover:-translate-y-0.5 hover:border-gold/50 hover:shadow-[var(--shadow-ember)] "><span aria-hidden="true" class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100" style="background:linear-gradient(100deg, transparent 20%, oklch(0.8 0.02 250 / 0.12) 50%, transparent 80%)"></span><svg viewBox="0 0 240 240" class="h-7 w-7 shrink-0 drop-shadow-[0_2px_6px_oklch(0.6_0.15_240/0.6)]" aria-hidden="true" focusable="false"><defs><linearGradient id="tg-disc" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#37BBFE"></stop><stop offset="100%" stop-color="#007DBB"></stop></linearGradient></defs><circle cx="120" cy="120" r="120" fill="url(#tg-disc)"></circle><path fill="#fff" d="M52 118.5c38-16.6 63.4-27.5 76-32.8 36.2-15.1 43.7-17.7 48.6-17.8 1.1 0 3.5.2 5.1 1.5 1.3 1 1.7 2.5 1.9 3.5.2 1 .4 3.3.2 5.1-2 21.1-10.7 72.3-15.1 96-1.9 10-5.6 13.4-9.1 13.7-7.7.7-13.6-5.1-21.1-10-11.7-7.7-18.3-12.5-29.7-20-13.2-8.7-4.6-13.5 2.9-21.3 2-2 36-33 36.7-35.8.1-.4.2-1.7-.6-2.4-.8-.7-2-.5-2.9-.3-1.2.3-20.9 13.3-59 39-5.6 3.8-10.7 5.7-15.2 5.6-5-.1-14.6-2.8-21.8-5.1-8.8-2.9-15.8-4.4-15.2-9.3.3-2.6 3.8-5.2 10.3-7.6z"></path></svg><span class="font-display text-sm font-bold tracking-[0.22em] text-steel">JOIN TELEGRAM CHANNEL</span></a></div><p class="text-xs tracking-[0.2em] text-muted-foreground">🐉 DRAGON THRONE • FORGED IN FIRE &amp; STEEL</p></footer></main><script>(function(a,f){let l;try{l=JSON.parse(sessionStorage.getItem(a)||"{}")}catch{return}const n=l?.[f||history.state?.__TSR_key];let c=!1;for(const t in n){const e=n[t],o=e?.scrollX,s=e?.scrollY;if(Number.isFinite(o)&&Number.isFinite(s)){if(t==="window")scrollTo(o,s),c=!0;else if(t)try{const r=document.querySelector(t);r&&(r.scrollLeft=o,r.scrollTop=s)}catch{}}}if(c)return;const i=location.hash.slice(1);if(i){const t=history.state?.__hashScrollIntoViewOptions??!0;if(t){const e=document.getElementById(i);e&&e.scrollIntoView(t)}return}scrollTo(0,0)})("tsr-scroll-restoration-v1_3");document.currentScript.remove()</script><!--/$--><script class="$tsr" id="$tsr-stream-barrier">(self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-Bamp5x-D.js"],scripts:$R[5]=[$R[6]={attrs:$R[7]={type:"module",async:!0,src:"/assets/index-Bamp5x-D.js"}}]},"/":$R[8]={preloads:$R[9]=["/assets/routes-DHcRvfjO.js","/assets/sfx-B9jgf8yo.js"]}}},matches:$R[10]=[$R[11]={i:"__root__",u:1793142763136,s:"success",ssr:!0},$R[12]={i:"",u:1793142763136,s:"success",b:$R[13]={motto:"The Throne answers only to its keeper."},l:$R[14]={motto:"The Throne answers only to its keeper."},ssr:!0}],lastMatchId:""})($R["tsr"]);$_TSR.e();document.currentScript.remove()</script><script type="module" async="" src="/assets/index-Bamp5x-D.js"></script>
+<aside
+	id="lovable-badge"
+	role="complementary"
+	dir="ltr"
+	lang="en"
+	aria-label="Edit with Lovable">
+	<a
+		id="lovable-badge-cta" 
+		target="_blank" 
+		href="https://lovable.dev/projects/lovp_608z76bmcf9f1r275918rga2m7?utm_source=lovable-badge"
+		rel="noopener nofollow"
+		aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<span id="lovable-badge-logo"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"/>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"/>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"/>
+      <stop offset=".394" stop-color="#FE3F21"/>
+      <stop offset=".608" stop-color="#F858BC"/>
+      <stop offset=".929" stop-color="#575ECF"/>
+    </radialGradient>
+  </defs>
+</svg>
+
+</span>
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button 
+		id="lovable-badge-close"
+		aria-label="Dismiss"
+		title="Dismiss"
+		type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"/>
+		</svg>
+	</button>
+</aside>
+<script>
+	(() => {
+		if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+			const badge = document.querySelector('#lovable-badge');
+			if (badge) {
+				badge.style.display = 'none';
+			}
+			return;
+		}
+
+		const closeButton = document.querySelector('#lovable-badge-close');
+		if (closeButton) {
+			closeButton.addEventListener('click', function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				const badge = document.querySelector('#lovable-badge');
+				if (badge) {
+					badge.classList.add('closing');
+					setTimeout(function() {
+						if (badge) {
+							badge.style.display = 'none';
+						}
+					}, 240);
+				}
+			});
+		}
+	})();
+</script>
+</body></html>
